@@ -1,8 +1,6 @@
 from crewai import Agent, Task, Crew, Process
-from dotenv import load_dotenv
 from langchain_google_genai import ChatGoogleGenerativeAI
 
-load_dotenv()
 # Set gemini pro as llm
 llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash",
                              verbose = False,
